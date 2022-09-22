@@ -37,7 +37,7 @@ public class DelegatesTests
        var numEqual = (string str, int x) => int.Parse(str) == x;
 
         //Act
-       var actual = lambda("0042", 42);
+       var actual = numEqual("0042", 42);
 
         //Assert
        Assert.Equal(true, actual);
