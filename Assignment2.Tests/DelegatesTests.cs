@@ -34,7 +34,7 @@ public class DelegatesTests
     public void Test_numerical_equal_0042()
     {   
         //Arrange
-       var lambda = (string str, int x) => int.Parse(str) == x;
+       var numEqual = (string str, int x) => int.Parse(str) == x;
 
         //Act
        var actual = lambda("0042", 42);
